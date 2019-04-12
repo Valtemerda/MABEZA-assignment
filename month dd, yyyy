@@ -1,0 +1,44 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+ {
+	int m = 1, d, y;
+	cout << "This will show in a (Month dd, yyyy) format \n";
+	cout << "Enter month as (1-12): "; cin >> m;
+	cout << "Enter a day: "; cin >> d;
+	cout << "Enter the year, from (0001 - 9999): "; cin >> y;
+	
+	
+	if (m == 1 && d > 0 && d < 32 && y > 0000 && y < 10000)
+	cout << "January " << d << ", " << y; 
+	else if (m == 2 && d > 0 && d < 29 && y > 0000 && y < 10000)
+		cout << "February " << d << ", " << y;
+	else if (m == 3 && d > 0 && d < 32 && y > 0000 && y < 10000)
+		cout << "March " << d << ", " << y;
+	else if (m == 4 && d > 0 && d < 31 && y > 0000 && y < 10000)
+		cout << "April " << d << ", " << y;
+	else if (m == 5 && d > 0 && d < 32 && y > 0000 && y < 10000)
+		cout << "May " << d << ", " << y;
+	else if (m == 6 && d > 0 && d < 31 && y > 0000 && y < 10000)
+		cout << "June " << d << ", " << y;
+	else if (m == 7 && d > 0 && d < 32 && y > 0000 && y < 10000)
+		cout << "July " << d << ", " << y;
+	else if (m == 8 && d > 0 && d < 32 && y > 0000 && y < 10000)
+		cout << "August " << d << ", " << y;
+	else if (m == 9 && d > 0 && d < 31 && y > 0000 && y < 10000)
+		cout << "September " << d << ", " << y;
+	else if (m == 10 && d > 0 && d < 32 && y > 0000 && y < 10000)
+		cout << "October " << d << ", " << y;
+	else if (m == 11 && d > 0 && d < 31 && y > 0000 && y < 10000)
+		cout << "November " << d << ", " << y;
+	else if (m == 11 && d > 0 && d < 31 && y > 0000 && y < 10000)
+		cout << "December " << d << ", " << y;
+	else 
+		cout << "Invalid input";
+	
+	
+	
+	return 0;
+}
